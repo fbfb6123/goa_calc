@@ -9,7 +9,7 @@ var _ = API("calc", func() {
 	Description("Service for adding numbers, a Goa teaser")
 	Server("calc", func() {
 		Host("localhost", func() {
-			URI("http://localhost:8000")
+			URI("http://localhost:8085/api/v1")
 			URI("grpc://localhost:8080")
 		})
 	})
